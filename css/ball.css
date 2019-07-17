@@ -1,0 +1,18 @@
+
+.ball {
+    text-align:center;
+    margin: 0% 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4267bd;
+    /* Use cube-beizer.com  */
+    animation: down 0.5s cubic-bezier(.5,0.05,1,.5);    ;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes down {
+    from { transform: translateY(0px); }
+    to { transform: translateY(100px); }
+}

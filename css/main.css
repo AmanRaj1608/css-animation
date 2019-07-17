@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+.body {
+    font-family: 'Raleway', sans-serif;
+    margin: 25px;
+    /* background-color: #869fba; */
+}
+
+/* Header */
+h1 {
+    margin-left: 25%;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    animation: blink ease-in;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes blink {
+    0% {color: black;}
+    50%{color: #26a99d;}
+    100% {color: black;}
+}
+
+/* Links */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #c02127;
+    color: white;
+}
+  
+li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+@media (min-width: 600px) {
+    /* Future plans */
+}
