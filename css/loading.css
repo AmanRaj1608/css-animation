@@ -1,6 +1,6 @@
 /* No - 1  */
 .circle {
-    margin: 15% 0 0 20%;
+    margin: 20% 0 0 30%;
 	width: 2.5em;
 	height: 2.5em;
 	border: 0.4em solid transparent;
@@ -17,7 +17,7 @@
 
 /* No - 2 */
 .spniner {
-    margin: -4% 0 0 30%;
+    margin: -4% 0 0 70%;
     width: 5rem;
     height: 5rem;
     border-radius: 90%;
@@ -38,18 +38,83 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
 }
-.bars div{
+
+.bars div {
     display: inline-block;
     position: relative;
     background: black;
     bottom: -29px;
-  }
-  .bar1 {
+}
+
+.bar1 {
     height: 10px;
     width: 5px;
     animation: 1s loader infinite;
     animation-delay: 0;
 }
+
+.bar2 {
+    height: 10px;
+    width: 5px;
+    animation: 1s loader infinite;
+    animation-delay: 0.3s;
+}
+
+.bar3 {
+    height: 25px;
+    width: 5px;
+    animation: 1s loader infinite;
+    animation-delay: 0.5s;
+}
+.bar4 {
+    height: 10px;
+    width: 5px;
+    animation: 1s loader infinite;
+    animation-delay: 0.7s;
+}
+
+@keyframes loader {
+    0% {
+         height: 10px;
+         bottom: -30px;
+    }
+    50% {
+         height: 25px;
+         bottom: -30px;
+    }
+    100% {
+         height: 10px;
+         bottom: -30px;
+    }
+}
+
+/* No - 4 */
+
+
+.inner {
+    margin: 0 0 0 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    will-change: transform;
+    animation: rotator .5s linear infinite;
+  }
+  
+  .inner:first-child {
+    background-color: #FBC02D;
+    transform-origin: 50% 100%;
+  }
+  
+  .inner:nth-child(2) {
+    background-color: #00796B;
+    transform-origin: 50% 0;
+  }
+  
+  @keyframes rotator {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
