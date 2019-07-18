@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Nixie+One');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 
-.body {
+body {
+    margin: 0px;
+    background-color: #f4f4f4;
     font-family: 'Raleway', sans-serif;
-    margin: 25px;
-    /* background-color: #869fba; */
+    background-color: #1abc9c;
 }
 
+
 /* Header */
-h1 {
-    margin-left: 25%;
+.mainLine {
     color: black;
     text-align: center;
     font-size: 3rem;
     animation: blink ease-in;
-    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-duration: 1s;
 }
@@ -25,37 +25,75 @@ h1 {
     100% {color: black;}
 }
 
-/* Links */
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-li a {
+/* Nav Bar */
+canvas {
     display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    margin: auto;
 }
-
-li a.active {
-    background-color: #c02127;
+#navbar {
+    background-color: #f2f2f2;
+    display: block;
+    font-size: 25px;
+    border-radius: 5px;
+}
+#last {
+    margin-right: 10px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    display: block;
     color: white;
 }
-  
-li a:hover:not(.active) {
-background-color: #555;
-color: white;
+ul li:hover {
+    background-color: #958976;
+}
+ul li {
+    text-align: center;
+    border-radius: 5px;
+    background-color: black;
+    margin-left: 10px;
+    float: left;
+    width: 200px;
+    height: 60px;
+    opacity: 0.8;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-@media (min-width: 600px) {
-    /* Future plans */
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7px 15px;
+    background: #1e1f26;
+    color: #FFF;
+    font-size: 1em;
+}
+footer a {
+    font-size: 1em;
+    color: #FFF;
+}
+footer p {
+    margin: 10px auto;
+    max-width: 1280px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) { 
+    #navbar {
+        display: none;
+    }
 }

@@ -47,7 +47,7 @@ html, body{
     position: absolute;
     top: -40px;
     animation-name: mario;
-    animation-duration: 3s;
+    animation-duration: 6s;
     /* Will stays at last */
     animation-fill-mode: both;
     animation-delay: 0.2s;
@@ -63,7 +63,7 @@ html, body{
     top: 70px;
     left: 0;
     animation-name: luigi;
-    animation-duration: 5s;
+    animation-duration: 7s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-timing-function: linear;

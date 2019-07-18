@@ -13,34 +13,24 @@
 </head>
 
 <body>
-    <main>
+    <h1 class="mainLine">Some CSS projects</h1>
+    <div id='navbar'>
         <ul>
-            <li class="active"><a href="./html/ball.html">Bouncing ball</a></li>
-            <li><a href="./html/ball.html">Bouncing ball</a></li>
-            <li><a href="./html/loading.html">Loading Animation</a></li>
-            <li><a href="./html/ball.html">Bouncing ball</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./ball.html">Bouncing ball</a></li>
+            <li><a class="active" href="./animation.html">Anim Square</a></li>
+            <li><a href="./loading.html">Loading Anim</a></li>
+            <li><a href="./card.html">Card Flip</a></li>
+            <li><a href="./mario.html">Mario</a></li>
+            <li><a href="./webpage.html">Webpage</a></li>
         </ul>
-        <h1 class="main">Some mini CSS projects</h1>
-        <div class="box"></div>
-    </main>
+    </div>
+    <div class="box"></div>
+    <footer role='contentinfo'>
+        <p>
+            &copy; Made with ❤ by <a href='https://github.com/AmanRaj1608/'> AmanRaj1608</a>
+        </p>
+    </footer>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
-<script>
-    var options = {
-        bottom: '50px', 
-        right: '32px', 
-        left: 'unset', 
-        time: '0.5s', 
-        mixColor: '#fff',
-        backgroundColor: '#fff', 
-        buttonColorDark: '#100f2c',
-        buttonColorLight: '#fff',
-        saveInCookies: false,
-        label: '🌓'
-    }
-    const darkmode = new Darkmode(options);
-    darkmode.showWidget();
-</script>
 
 </html>
